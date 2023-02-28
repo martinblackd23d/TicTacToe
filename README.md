@@ -1,4 +1,4 @@
-# TicTacToe
+# TicTacToeAI
 Neural network to evaluate TicTacToe positions
 
 The entire code was written by me, in Python. As a result, it is really slow, and while scaling is theoretically possible, it is highly impractical. Consequently, it is incredibely inaccurate. It mainly serves as a proof of concept, before I start learing dedicated machine learning libraries, or try to build a neural network in a more efficient language
