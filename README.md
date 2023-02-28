@@ -8,6 +8,7 @@ First I built a game tree to create a database of all valid positions and whethe
 For simplicity, I only trained the AI to play as the player who goes first. Additionally, I excluded every losing position, because perfect strategy doesn't make sense there. I initially planned to evaluate losing positions based on probability of winning, depending on the opponents moves, but I ulitmately didn't implement it.
 
 In every position, I calculated the list of optimal moves, based on the optimal strategy found on [wikipedia.](https://en.wikipedia.org/wiki/Tic-tac-toe#Strategy)
+
 I then trained the neural network to evaluate these individual positions.
 
 ## Structure of neural network
@@ -28,6 +29,7 @@ The loss function was the percentage of positions, where the neural networks sin
 The learning rate was adjusted several times, with the different networks having different rates within the same generation. This was meant to ensure that a particularly unlucky generation still doesn't lose it's progress. This was a theoretical possibility because of the limited number of nets trained simultaniously.
 
 I considered reserving a portion of the database for evaluation, but due to the already limited size of the dataset, and considering that it included every possible position anyway, I thought overfitting wouldn't be an issue.
+
 For now, it does not include backpropagation
 
 ## Results
